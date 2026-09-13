@@ -5,168 +5,541 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Spice Garden Restaurant</title>
+    <title>SpiceGarden | Authentic Indian Cuisine</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav id="navbar">
+    <!-- ================= NAVBAR ================= -->
 
-        <h2>🍴 Spice Garden</h2>
+    <header class="navbar" id="navbar">
 
-        <div class="menu">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#menu">Menu</a>
-            <a href="#contact">Contact</a>
-        </div>
+        <div class="nav-container">
 
-    </nav>
-
-
-    <!-- HOME -->
-    <section id="home">
-
-        <div class="hero">
-
-            <p>WELCOME TO</p>
-
-            <h1>Spice Garden</h1>
-
-            <h3>Authentic Taste. Unforgettable Experience.</h3>
-
-            <p>
-                Delicious food, fresh ingredients and
-                traditional flavors made with love.
-            </p>
-
-            <a href="#menu" class="button">
-                Explore Our Menu
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-pepper-hot"></i>
+                Spice<span>Garden</span>
             </a>
 
+            <nav class="nav-links" id="navLinks">
+
+                <a href="#home">Home</a>
+                <a href="#specials">Specials</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="hero-tag">
+                AUTHENTIC INDIAN CUISINE
+            </p>
+
+            <h1>
+                Taste the <span>Tradition.</span>
+            </h1>
+
+            <p class="hero-text">
+                Experience rich Indian flavors, traditional recipes,
+                and freshly prepared dishes made with love.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="btn primary-btn">
+                    Explore Menu
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Visit Us
+                </a>
+
+            </div>
+
+            <div class="hero-info">
+
+                <div>
+                    <i class="fa-solid fa-star"></i>
+
+                    <div>
+                        <strong>4.8/5</strong>
+                        <span>Customer Rating</span>
+                    </div>
+                </div>
+
+                <div>
+                    <i class="fa-regular fa-clock"></i>
+
+                    <div>
+                        <strong>11 AM - 11 PM</strong>
+                        <span>Open Daily</span>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
     </section>
 
 
-    <!-- ABOUT -->
-    <section id="about">
+    <!-- ================= SPECIALS ================= -->
 
-        <h2>About Us</h2>
+    <section class="section specials" id="specials">
 
-        <p>
-            Welcome to Spice Garden, where traditional Indian
-            flavors meet modern dining. We prepare every dish
-            using fresh ingredients and authentic spices.
-        </p>
+        <div class="section-heading">
+
+            <p class="section-tag">
+                CHEF'S SPECIALS
+            </p>
+
+            <h2>
+                Favorites Worth Sharing
+            </h2>
+
+            <p>
+                Discover some of our most loved dishes,
+                prepared with authentic spices and fresh ingredients.
+            </p>
+
+        </div>
+
+
+        <div class="special-grid">
+
+            <!-- Chicken Biryani -->
+
+            <article class="food-card">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=85"
+                        alt="Chicken Biryani"
+                    >
+
+                    <span class="popular">
+                        Popular
+                    </span>
+
+                </div>
+
+                <div class="food-content">
+
+                    <div class="food-title">
+
+                        <h3>Chicken Biryani</h3>
+
+                        <span>₹280</span>
+
+                    </div>
+
+                    <p>
+                        Fragrant basmati rice cooked with tender chicken,
+                        aromatic spices, and saffron.
+                    </p>
+
+                    <button
+                        class="order-btn"
+                        data-food="Chicken Biryani"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Butter Chicken -->
+
+            <article class="food-card">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Cw_600%2Ch_600%2Cc_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/14/8da24f59-f16a-4889-bb25-dd76fe5a7a31_84702f1f-7973-4c1a-9886-fd318dd79649.jpg"
+                        alt="Butter Chicken"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <div class="food-title">
+
+                        <h3>Butter Chicken</h3>
+
+                        <span>₹320</span>
+
+                    </div>
+
+                    <p>
+                        Creamy tomato gravy with tender chicken,
+                        butter, and traditional Indian spices.
+                    </p>
+
+                    <button
+                        class="order-btn"
+                        data-food="Butter Chicken"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Samosa -->
+
+            <article class="food-card">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://static.wixstatic.com/media/3bf997_47d3b1166c224e0dbd357b2ffb219334~mv2.jpg/v1/fill/w_980%2Ch_1470%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/pexels-satyam-verma-2901977-4449068.jpg"
+                        alt="Classic Samosa"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <div class="food-title">
+
+                        <h3>Classic Samosa</h3>
+
+                        <span>₹80</span>
+
+                    </div>
+
+                    <p>
+                        Crispy golden pastry filled with spiced potatoes,
+                        peas, and aromatic herbs.
+                    </p>
+
+                    <button
+                        class="order-btn"
+                        data-food="Classic Samosa"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+
+    <section class="section menu-section" id="menu">
+
+        <div class="section-heading">
+
+            <p class="section-tag">
+                OUR MENU
+            </p>
+
+            <h2>
+                Something for Everyone
+            </h2>
+
+            <p>
+                From traditional biryanis to delicious desserts,
+                there's something for every craving.
+            </p>
+
+        </div>
+
+
+        <!-- Filters -->
+
+        <div class="filters">
+
+            <button class="filter active" data-category="all">
+                All
+            </button>
+
+            <button class="filter" data-category="biryani">
+                Biryani
+            </button>
+
+            <button class="filter" data-category="vegetarian">
+                Vegetarian
+            </button>
+
+            <button class="filter" data-category="desserts">
+                Desserts
+            </button>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+            <!-- Mutton Biryani -->
+
+            <article
+                class="menu-card"
+                data-category="biryani"
+            >
+
+                <img
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Cw_600/oo7r5rthhjev4itrucdi"
+                    alt="Mutton Biryani"
+                >
+
+                <div class="menu-info">
+
+                    <div class="menu-title">
+
+                        <h3>Mutton Biryani</h3>
+
+                        <span>₹360</span>
+
+                    </div>
+
+                    <p>
+                        Slow-cooked mutton with fragrant basmati rice
+                        and aromatic spices.
+                    </p>
+
+                    <button
+                        class="small-order"
+                        data-food="Mutton Biryani"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Paneer Tikka -->
+
+            <article
+                class="menu-card"
+                data-category="vegetarian"
+            >
+
+                <img
+                    src="https://b.zmtcdn.com/data/dish_photos/09b/2620dc6c5c1cb53d301ffb8c90ccc09b.jpg"
+                    alt="Paneer Tikka"
+                >
+
+                <div class="menu-info">
+
+                    <div class="menu-title">
+
+                        <h3>Paneer Tikka</h3>
+
+                        <span>₹240</span>
+
+                    </div>
+
+                    <p>
+                        Grilled paneer marinated with yogurt,
+                        herbs, and Indian spices.
+                    </p>
+
+                    <button
+                        class="small-order"
+                        data-food="Paneer Tikka"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Paneer Masala -->
+
+            <article
+                class="menu-card"
+                data-category="vegetarian"
+            >
+
+                <img
+                    src="https://images.pexels.com/photos/28674559/pexels-photo-28674559.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Paneer Masala"
+                >
+
+                <div class="menu-info">
+
+                    <div class="menu-title">
+
+                        <h3>Paneer Masala</h3>
+
+                        <span>₹260</span>
+
+                    </div>
+
+                    <p>
+                        Soft paneer cooked in a rich,
+                        flavorful tomato and spice gravy.
+                    </p>
+
+                    <button
+                        class="small-order"
+                        data-food="Paneer Masala"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Gulab Jamun -->
+
+            <article
+                class="menu-card"
+                data-category="desserts"
+            >
+
+                <img
+                    src="https://images.pexels.com/photos/9198596/pexels-photo-9198596.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Gulab Jamun"
+                >
+
+                <div class="menu-info">
+
+                    <div class="menu-title">
+
+                        <h3>Gulab Jamun</h3>
+
+                        <span>₹100</span>
+
+                    </div>
+
+                    <p>
+                        Soft milk-solid dumplings soaked in
+                        warm cardamom sugar syrup.
+                    </p>
+
+                    <button
+                        class="small-order"
+                        data-food="Gulab Jamun"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="section about" id="about">
 
         <div class="about-image">
+
             <img
-                src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=80"
-                alt="Restaurant food">
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85"
+                alt="SpiceGarden Restaurant"
+            >
+
         </div>
 
-    </section>
+
+        <div class="about-content">
+
+            <p class="section-tag">
+                OUR STORY
+            </p>
+
+            <h2>
+                Where Every Meal Tells a Story
+            </h2>
+
+            <p>
+                SpiceGarden was created with one simple idea:
+                to bring the authentic flavors of India to every table.
+            </p>
+
+            <p>
+                Our chefs combine traditional cooking techniques
+                with fresh ingredients and carefully selected spices
+                to create food that feels both familiar and special.
+            </p>
 
 
-    <!-- MENU -->
-    <section id="menu">
+            <div class="about-features">
 
-        <h2>Our Special Menu</h2>
+                <div>
+                    <i class="fa-solid fa-leaf"></i>
 
-        <div class="food-container">
-
-
-            <!-- Biryani -->
-            <div class="food-card">
-
-                <img
-                    src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&q=80"
-                    alt="Chicken Biryani">
-                    
-                <div class="food-content">
-
-                    <h3>Chicken Biryani</h3>
-
-                    <p>
-                        Aromatic basmati rice with tender chicken
-                        and traditional spices.
-                    </p>
-
-                    <h4>₹250</h4>
-
+                    <div>
+                        <h4>Fresh Ingredients</h4>
+                        <p>Quality ingredients every day.</p>
+                    </div>
                 </div>
 
-            </div>
+                <div>
+                    <i class="fa-solid fa-utensils"></i>
 
-
-            <!-- Pizza -->
-            <div class="food-card">
-
-                <img
-                    src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80"
-                    alt="Pizza">
-
-                <div class="food-content">
-
-                    <h3>Veg Pizza</h3>
-
-                    <p>
-                        Fresh vegetables, mozzarella cheese
-                        and delicious Italian herbs.
-                    </p>
-
-                    <h4>₹199</h4>
-
+                    <div>
+                        <h4>Expert Chefs</h4>
+                        <p>Traditional recipes and techniques.</p>
+                    </div>
                 </div>
 
-            </div>
+                <div>
+                    <i class="fa-solid fa-heart"></i>
 
-
-            <!-- Noodles -->
-            <div class="food-card">
-
-                <img
-                    src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=600&q=80"
-                    alt="Noodles">
-
-                <div class="food-content">
-
-                    <h3>Hakka Noodles</h3>
-
-                    <p>
-                        Stir-fried noodles with fresh vegetables
-                        and special sauces.
-                    </p>
-
-                    <h4>₹160</h4>
-
-                </div>
-
-            </div>
-
-
-            <!-- Dessert -->
-            <div class="food-card">
-
-                <img
-                    src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=80"
-                    alt="Ice Cream">
-
-                <div class="food-content">
-
-                    <h3>Ice Cream</h3>
-
-                    <p>
-                        Creamy and delicious dessert to finish
-                        your meal perfectly.
-                    </p>
-
-                    <h4>₹100</h4>
-
+                    <div>
+                        <h4>Made With Love</h4>
+                        <p>Every dish is prepared with care.</p>
+                    </div>
                 </div>
 
             </div>
@@ -176,38 +549,141 @@
     </section>
 
 
-    <!-- CONTACT -->
-    <section id="contact">
+    <!-- ================= CONTACT ================= -->
 
-        <h2>Visit Us</h2>
+    <section class="section contact" id="contact">
 
-        <p>📍 Hyderabad, Telangana</p>
+        <div class="section-heading">
 
-        <p>📞 +91 98765 43210</p>
+            <p class="section-tag">
+                GET IN TOUCH
+            </p>
 
-        <p>✉️ spicegarden@example.com</p>
+            <h2>
+                Visit SpiceGarden
+            </h2>
 
-        <br>
+            <p>
+                Come enjoy authentic Indian food with family and friends.
+            </p>
 
-        <a href="tel:+919876543210" class="button">
-            Book a Table
-        </a>
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>Location</h3>
+
+                <p>
+                    123 Food Street<br>
+                    Hyderabad, Telangana
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <h3>Call Us</h3>
+
+                <p>
+                    +91 98765 43210
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <i class="fa-regular fa-clock"></i>
+
+                <h3>Opening Hours</h3>
+
+                <p>
+                    Monday - Sunday<br>
+                    11:00 AM - 11:00 PM
+                </p>
+
+            </div>
+
+        </div>
 
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- ================= FOOTER ================= -->
+
     <footer>
 
-        <h3>🍴 Spice Garden</h3>
+        <div class="footer-content">
 
-        <p>
-            © 2026 Spice Garden. All Rights Reserved.
-        </p>
+            <div>
+
+                <a href="#home" class="logo footer-logo">
+                    <i class="fa-solid fa-pepper-hot"></i>
+                    Spice<span>Garden</span>
+                </a>
+
+                <p>
+                    Authentic Indian flavors,
+                    made with tradition and love.
+                </p>
+
+            </div>
+
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 SpiceGarden. All rights reserved.
+            </p>
+
+            <p>
+                SkillCraft Technology - Task 01
+            </p>
+
+        </div>
 
     </footer>
 
 
+    <!-- ================= TOAST ================= -->
+
+    <div class="toast" id="toast">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <span></span>
+
+    </div>
+
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
