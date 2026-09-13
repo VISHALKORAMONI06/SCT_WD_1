@@ -22,15 +22,6 @@ This project was created as part of my Web Development Internship at SkillCraft 
 - CSS3
 - JavaScript
 
-## Project Structure
-
-SCT_WD_1/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-
 ## Task
 
 SkillCraft Technology Web Development Internship
